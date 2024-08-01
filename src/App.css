@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.faculty-grid, .course-grid, .student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.faculty-card, .course-card, .student-card {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-card h3, .course-card h3, .student-card h3 {
+  margin-top: 0;
+}
+
+.faculty-card p, .course-card p, .student-card p {
+  margin-bottom: 10px;
+}
